@@ -1,7 +1,7 @@
+proslab/unicam/simpleSeleniumTest/ASimpleSeleniumJunitTest.class
 proslab/unicam/selenium/FirstSeleniumTest.class
-proslab/unicam/logandreports/LoggerTest2.class
 proslab/unicam/database/ConnectMySQL.class
-ASimpleSeleniumJunitTest.class
+proslab/unicam/usefultests/screenshotSelenium.class
 proslab/unicam/usefultests/HttpResponseCodeTest.class
 proslab/unicam/config/PropertiesFile.class
 proslab/unicam/headlesschrome/HeadlessChrome.class

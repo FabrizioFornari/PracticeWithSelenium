@@ -15,10 +15,11 @@ public class ASimpleSeleniumTest {
 	
 	static WebDriver driver;
 	
-	static String configFilename = "/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/proslabSelenium/src/main/java/proslab/unicam/logandreports/log4j.properties";
-	
 	static String projectPath = System.getProperty("user.dir"); 
 	
+	static String configFilename = projectPath+"/src/main/java/proslab/unicam/logandreports/log4j.properties";
+	
+
 	
 	public static void main(String[] args) throws InterruptedException {
 			

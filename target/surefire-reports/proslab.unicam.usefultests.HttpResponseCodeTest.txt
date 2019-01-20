@@ -1,12 +1,37 @@
 -------------------------------------------------------------------------------
 Test set: proslab.unicam.usefultests.HttpResponseCodeTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.507 s <<< FAILURE! - in proslab.unicam.usefultests.HttpResponseCodeTest
-testBrokenLinks  Time elapsed: 10.501 s  <<< FAILURE!
-java.lang.AssertionError: mailto:flavio.corradini@unicam.itA clear description of the failure
-	at proslab.unicam.usefultests.HttpResponseCodeTest.checkBrokenLinks(HttpResponseCodeTest.java:79)
-	at proslab.unicam.usefultests.HttpResponseCodeTest.testBrokenLinks(HttpResponseCodeTest.java:45)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at proslab.unicam.usefultests.HttpResponseCodeTest.checkBrokenLinks(HttpResponseCodeTest.java:73)
-	at proslab.unicam.usefultests.HttpResponseCodeTest.testBrokenLinks(HttpResponseCodeTest.java:45)
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 3.035 s <<< FAILURE! - in proslab.unicam.usefultests.HttpResponseCodeTest
+testBrokenLinks  Time elapsed: 3.014 s  <<< FAILURE!
+java.lang.AssertionError: A clear description of the failure
+	at proslab.unicam.usefultests.HttpResponseCodeTest.checkBrokenLinks(HttpResponseCodeTest.java:94)
+	at proslab.unicam.usefultests.HttpResponseCodeTest.testBrokenLinks(HttpResponseCodeTest.java:47)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.12.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'fabriziounicam', ip: 'fe80:0:0:0:ca7:98cf:b12d:210a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.5', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/_w/2rr1gddx3bs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53587}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: a4e61229afe2d9204a535c3b63d464b9
+*** Element info: {Using=css selector, value=a}
+	at proslab.unicam.usefultests.HttpResponseCodeTest.checkBrokenLinks(HttpResponseCodeTest.java:67)
+	at proslab.unicam.usefultests.HttpResponseCodeTest.testBrokenLinks(HttpResponseCodeTest.java:47)
+
+proslab.unicam.usefultests.HttpResponseCodeTest  Time elapsed: 3.035 s  <<< ERROR!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.12.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'fabriziounicam', ip: 'fe80:0:0:0:ca7:98cf:b12d:210a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.5', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/_w/2rr1gddx3bs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53587}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: a4e61229afe2d9204a535c3b63d464b9
+	at proslab.unicam.usefultests.HttpResponseCodeTest.tearDown2(HttpResponseCodeTest.java:39)
 

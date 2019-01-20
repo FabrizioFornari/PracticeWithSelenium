@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="proslab.unicam.usefultests.LoginTest" time="3.826" tests="2" errors="2" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/user/.m2/repository/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.jar:/Users/user/.m2/repository/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.jar:/Users/user/.m2/repository/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.jar:/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/practiceWithSelenium/target/test-classes:/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/practiceWithSelenium/target/classes:/Users/user/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.3.2/junit-jupiter-api-5.3.2.jar:/Users/user/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/user/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/Users/user/.m2/repository/org/junit/platform/junit-platform-commons/1.3.2/junit-platform-commons-1.3.2.jar:/Users/user/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.3.2/junit-jupiter-params-5.3.2.jar:/Users/user/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.3.2/junit-jupiter-engine-5.3.2.jar:/Users/user/.m2/repository/org/junit/platform/junit-platform-engine/1.3.2/junit-platform-engine-1.3.2.jar:/Users/user/.m2/repository/org/junit/platform/junit-platform-launcher/1.3.2/junit-platform-launcher-1.3.2.jar:/Users/user/.m2/repository/org/junit/platform/junit-platform-runner/1.3.2/junit-platform-runner-1.3.2.jar:/Users/user/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/user/.m2/repository/org/junit/platform/junit-platform-suite-api/1.3.2/junit-platform-suite-api-1.3.2.jar:/Users/user/.m2/repository/com/codeborne/phantomjsdriver/1.4.4/phantomjsdriver-1.4.4.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-api/3.8.1/selenium-api-3.8.1.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.8.1/selenium-remote-driver-3.8.1.jar:/Users/user/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/user/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/user/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/user/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/user/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/user/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/user/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/user/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/user/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/user/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/user/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/user/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/user/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/user/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/user/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-server/3.141.59/selenium-server-3.141.59.jar:/Users/user/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/user/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.12.v20180830/jetty-repacked-9.4.12.v20180830.jar:/Users/user/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/user/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.33.3/htmlunit-driver-2.33.3.jar:/Users/user/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.33/htmlunit-2.33.jar:/Users/user/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/user/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/user/.m2/repository/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.jar:/Users/user/.m2/repository/org/apache/commons/commons-text/1.4/commons-text-1.4.jar:/Users/user/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.33/htmlunit-core-js-2.33.jar:/Users/user/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.33/neko-htmlunit-2.33.jar:/Users/user/.m2/repository/xerces/xercesImpl/2.12.0/xercesImpl-2.12.0.jar:/Users/user/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/user/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.2.0/htmlunit-cssparser-1.2.0.jar:/Users/user/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/user/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/user/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.12.v20180830/websocket-client-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/jetty-client/9.4.12.v20180830/jetty-client-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/jetty-http/9.4.12.v20180830/jetty-http-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.12.v20180830/jetty-xml-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/jetty-util/9.4.12.v20180830/jetty-util-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/jetty-io/9.4.12.v20180830/jetty-io-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.12.v20180830/websocket-common-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.12.v20180830/websocket-api-9.4.12.v20180830.jar:/Users/user/.m2/repository/io/rest-assured/rest-assured/3.2.0/rest-assured-3.2.0.jar:/Users/user/.m2/repository/org/codehaus/groovy/groovy/2.4.15/groovy-2.4.15.jar:/Users/user/.m2/repository/org/codehaus/groovy/groovy-xml/2.4.15/groovy-xml-2.4.15.jar:/Users/user/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/user/.m2/repository/org/apache/httpcomponents/httpmime/4.5.1/httpmime-4.5.1.jar:/Users/user/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/user/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/user/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/user/.m2/repository/io/rest-assured/json-path/3.2.0/json-path-3.2.0.jar:/Users/user/.m2/repository/org/codehaus/groovy/groovy-json/2.4.15/groovy-json-2.4.15.jar:/Users/user/.m2/repository/io/rest-assured/rest-assured-common/3.2.0/rest-assured-common-3.2.0.jar:/Users/user/.m2/repository/io/rest-assured/xml-path/3.2.0/xml-path-3.2.0.jar:/Users/user/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:/Users/user/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-osgi-2.2.10.jar:/Users/user/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/user/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/user/.m2/repository/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar:/Users/user/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/Users/user/.m2/repository/org/apache/maven/surefire/surefire-junit-platform/2.22.0/surefire-junit-platform-2.22.0.jar:/Users/user/.m2/repository/org/junit/platform/junit-platform-launcher/1.2.0/junit-platform-launcher-1.2.0.jar:/Users/user/.m2/repository/org/junit/platform/junit-platform-engine/1.2.0/junit-platform-engine-1.2.0.jar:/Users/user/.m2/repository/org/junit/platform/junit-platform-commons/1.2.0/junit-platform-commons-1.2.0.jar:/Users/user/.m2/repository/org/opentest4j/opentest4j/1.1.0/opentest4j-1.1.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="user.country.format" value="IT"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/practiceWithSelenium/target/surefire 2019-01-21T00-22-11_333-jvmRun1 surefire5681861810681353148tmp surefire_05975503381118522421tmp"/>
+    <property name="surefire.test.class.path" value="/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/practiceWithSelenium/target/test-classes:/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/practiceWithSelenium/target/classes:/Users/user/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.3.2/junit-jupiter-api-5.3.2.jar:/Users/user/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/user/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/Users/user/.m2/repository/org/junit/platform/junit-platform-commons/1.3.2/junit-platform-commons-1.3.2.jar:/Users/user/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.3.2/junit-jupiter-params-5.3.2.jar:/Users/user/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.3.2/junit-jupiter-engine-5.3.2.jar:/Users/user/.m2/repository/org/junit/platform/junit-platform-engine/1.3.2/junit-platform-engine-1.3.2.jar:/Users/user/.m2/repository/org/junit/platform/junit-platform-launcher/1.3.2/junit-platform-launcher-1.3.2.jar:/Users/user/.m2/repository/org/junit/platform/junit-platform-runner/1.3.2/junit-platform-runner-1.3.2.jar:/Users/user/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/user/.m2/repository/org/junit/platform/junit-platform-suite-api/1.3.2/junit-platform-suite-api-1.3.2.jar:/Users/user/.m2/repository/com/codeborne/phantomjsdriver/1.4.4/phantomjsdriver-1.4.4.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-api/3.8.1/selenium-api-3.8.1.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.8.1/selenium-remote-driver-3.8.1.jar:/Users/user/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/user/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/user/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/user/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/user/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/user/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/user/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/user/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/user/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/user/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/user/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/user/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/user/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/user/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/user/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-server/3.141.59/selenium-server-3.141.59.jar:/Users/user/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/user/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.4.12.v20180830/jetty-repacked-9.4.12.v20180830.jar:/Users/user/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/user/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/user/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.33.3/htmlunit-driver-2.33.3.jar:/Users/user/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.33/htmlunit-2.33.jar:/Users/user/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/user/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/user/.m2/repository/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.jar:/Users/user/.m2/repository/org/apache/commons/commons-text/1.4/commons-text-1.4.jar:/Users/user/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.33/htmlunit-core-js-2.33.jar:/Users/user/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.33/neko-htmlunit-2.33.jar:/Users/user/.m2/repository/xerces/xercesImpl/2.12.0/xercesImpl-2.12.0.jar:/Users/user/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/user/.m2/repository/net/sourceforge/htmlunit/htmlunit-cssparser/1.2.0/htmlunit-cssparser-1.2.0.jar:/Users/user/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/user/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/user/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.12.v20180830/websocket-client-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/jetty-client/9.4.12.v20180830/jetty-client-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/jetty-http/9.4.12.v20180830/jetty-http-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/jetty-xml/9.4.12.v20180830/jetty-xml-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/jetty-util/9.4.12.v20180830/jetty-util-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/jetty-io/9.4.12.v20180830/jetty-io-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.12.v20180830/websocket-common-9.4.12.v20180830.jar:/Users/user/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.12.v20180830/websocket-api-9.4.12.v20180830.jar:/Users/user/.m2/repository/io/rest-assured/rest-assured/3.2.0/rest-assured-3.2.0.jar:/Users/user/.m2/repository/org/codehaus/groovy/groovy/2.4.15/groovy-2.4.15.jar:/Users/user/.m2/repository/org/codehaus/groovy/groovy-xml/2.4.15/groovy-xml-2.4.15.jar:/Users/user/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/user/.m2/repository/org/apache/httpcomponents/httpmime/4.5.1/httpmime-4.5.1.jar:/Users/user/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/user/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/user/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/user/.m2/repository/io/rest-assured/json-path/3.2.0/json-path-3.2.0.jar:/Users/user/.m2/repository/org/codehaus/groovy/groovy-json/2.4.15/groovy-json-2.4.15.jar:/Users/user/.m2/repository/io/rest-assured/rest-assured-common/3.2.0/rest-assured-common-3.2.0.jar:/Users/user/.m2/repository/io/rest-assured/xml-path/3.2.0/xml-path-3.2.0.jar:/Users/user/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:/Users/user/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-osgi-2.2.10.jar:/Users/user/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/user/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/user/.m2/repository/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar:/Users/user/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/user"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/practiceWithSelenium"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
+    <property name="user.name" value="user"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.12.5"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/user/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/_w/2rr1gddx3bs3q6v6bt6pcwm40000gn/T/"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="user.dir" value="/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/practiceWithSelenium"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/user/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.161-b12"/>
+    <property name="java.ext.dirs" value="/Users/user/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="login" classname="proslab.unicam.usefultests.LoginTest" time="3.811">
+    <error message="no such window: window was already closed&#10;  (Session info: chrome=71.0.3578.98)&#10;  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.12.5 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;&#10;System info: host: &apos;fabriziounicam&apos;, ip: &apos;fe80:0:0:0:ca7:98cf:b12d:210a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.5&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/_w/2rr1gddx3bs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53610}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}&#10;Session ID: e7f6d387e78cfb50e812ff109cb42ae2&#10;*** Element info: {Using=name, value=email}" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
+no such window: window was already closed
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.12.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'fabriziounicam', ip: 'fe80:0:0:0:ca7:98cf:b12d:210a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.5', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/_w/2rr1gddx3bs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53610}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: e7f6d387e78cfb50e812ff109cb42ae2
+*** Element info: {Using=name, value=email}
+	at proslab.unicam.usefultests.LoginTest.loginBrowser(LoginTest.java:82)
+	at proslab.unicam.usefultests.LoginTest.login(LoginTest.java:58)
+</error>
+    <system-out><![CDATA[DEBUG RequestAddCookies - CookieSpec selected: default
+DEBUG RequestAuthCache - Auth cache not set in the context
+DEBUG PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:46697][total kept alive: 2; route allocated: 0 of 2000; total allocated: 2 of 2000]
+DEBUG PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->http://localhost:46697][total kept alive: 2; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG MainClientExec - Opening connection {}->http://localhost:46697
+DEBUG DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:46697
+DEBUG DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:53609<->127.0.0.1:46697
+DEBUG DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 10800000
+DEBUG MainClientExec - Executing request POST /session HTTP/1.1
+DEBUG MainClientExec - Target auth state: UNCHALLENGED
+DEBUG MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG headers - http-outgoing-3 >> POST /session HTTP/1.1
+DEBUG headers - http-outgoing-3 >> Content-Type: application/json; charset=utf-8
+DEBUG headers - http-outgoing-3 >> Content-Length: 335
+DEBUG headers - http-outgoing-3 >> Host: localhost:46697
+DEBUG headers - http-outgoing-3 >> Connection: Keep-Alive
+DEBUG headers - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)
+DEBUG headers - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+DEBUG wire - http-outgoing-3 >> "POST /session HTTP/1.1[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Content-Length: 335[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Host: localhost:46697[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "{[\n]"
+DEBUG wire - http-outgoing-3 >> "  "desiredCapabilities": {"browserName":"chrome","goog:chromeOptions":{"args":[],"extensions":[]}},[\n]"
+DEBUG wire - http-outgoing-3 >> "  "capabilities": {[\n]"
+DEBUG wire - http-outgoing-3 >> "    "desiredCapabilities": {"browserName":"chrome","goog:chromeOptions":{"args":[],"extensions":[]}},[\n]"
+DEBUG wire - http-outgoing-3 >> "    "firstMatch": [[\n]"
+DEBUG wire - http-outgoing-3 >> "      {"browserName":"chrome","goog:chromeOptions":{"args":[],"extensions":[]}}[\n]"
+DEBUG wire - http-outgoing-3 >> "    ][\n]"
+DEBUG wire - http-outgoing-3 >> "  }[\n]"
+DEBUG wire - http-outgoing-3 >> "}"
+DEBUG wire - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Length:1013[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 << "[\r][\n]"
+DEBUG wire - http-outgoing-3 << "{"sessionId":"e7f6d387e78cfb50e812ff109cb42ae2","status":0,"value":{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189)","userDataDir":"/var/folders/_w/2rr1gddx3bs3q6v6bt6pcwm40000gn/T/.org.chromium.Chromium.w3Dizp"},"cssSelectorsEnabled":true,"databaseEnabled":false,"goog:chromeOptions":{"debuggerAddress":"localhost:53610"},"handlesAlerts":true,"hasTouchScreen":false,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platform":"Mac OS X","proxy":{},"rotatable":false,"setWindowRect":true,"strictFileInteractability":false,"takesHeapSnapshot":true,"takesScreenshot":true,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unexpectedAlertBehaviour":"ignore","version":"71.0.3578.98","webStorageEnabled":true}}"
+DEBUG headers - http-outgoing-3 << HTTP/1.1 200 OK
+DEBUG headers - http-outgoing-3 << Content-Length:1013
+DEBUG headers - http-outgoing-3 << Content-Type:application/json; charset=utf-8
+DEBUG MainClientExec - Connection can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection [id: 3][route: {}->http://localhost:46697] can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG RequestAddCookies - CookieSpec selected: default
+DEBUG RequestAuthCache - Auth cache not set in the context
+DEBUG PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->http://localhost:46697][total kept alive: 2; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG MainClientExec - Stale connection check
+DEBUG wire - http-outgoing-3 << "[read] I/O error: Read timed out"
+DEBUG DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 10800000
+DEBUG MainClientExec - Executing request POST /session/e7f6d387e78cfb50e812ff109cb42ae2/window/current/maximize HTTP/1.1
+DEBUG MainClientExec - Target auth state: UNCHALLENGED
+DEBUG MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG headers - http-outgoing-3 >> POST /session/e7f6d387e78cfb50e812ff109cb42ae2/window/current/maximize HTTP/1.1
+DEBUG headers - http-outgoing-3 >> Content-Type: application/json; charset=utf-8
+DEBUG headers - http-outgoing-3 >> Content-Length: 45
+DEBUG headers - http-outgoing-3 >> Host: localhost:46697
+DEBUG headers - http-outgoing-3 >> Connection: Keep-Alive
+DEBUG headers - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)
+DEBUG headers - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+DEBUG wire - http-outgoing-3 >> "POST /session/e7f6d387e78cfb50e812ff109cb42ae2/window/current/maximize HTTP/1.1[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Content-Length: 45[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Host: localhost:46697[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "{"windowHandle":"current","handle":"current"}"
+DEBUG wire - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Length:108[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 << "[\r][\n]"
+DEBUG wire - http-outgoing-3 << "{"sessionId":"e7f6d387e78cfb50e812ff109cb42ae2","status":0,"value":{"height":837,"width":1440,"x":0,"y":23}}"
+DEBUG headers - http-outgoing-3 << HTTP/1.1 200 OK
+DEBUG headers - http-outgoing-3 << Content-Length:108
+DEBUG headers - http-outgoing-3 << Content-Type:application/json; charset=utf-8
+DEBUG MainClientExec - Connection can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection [id: 3][route: {}->http://localhost:46697] can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG RequestAddCookies - CookieSpec selected: default
+DEBUG RequestAuthCache - Auth cache not set in the context
+DEBUG PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->http://localhost:46697][total kept alive: 2; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG MainClientExec - Stale connection check
+DEBUG wire - http-outgoing-3 << "[read] I/O error: Read timed out"
+DEBUG DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 10800000
+DEBUG MainClientExec - Executing request DELETE /session/e7f6d387e78cfb50e812ff109cb42ae2/cookie HTTP/1.1
+DEBUG MainClientExec - Target auth state: UNCHALLENGED
+DEBUG MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG headers - http-outgoing-3 >> DELETE /session/e7f6d387e78cfb50e812ff109cb42ae2/cookie HTTP/1.1
+DEBUG headers - http-outgoing-3 >> Host: localhost:46697
+DEBUG headers - http-outgoing-3 >> Connection: Keep-Alive
+DEBUG headers - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)
+DEBUG headers - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+DEBUG wire - http-outgoing-3 >> "DELETE /session/e7f6d387e78cfb50e812ff109cb42ae2/cookie HTTP/1.1[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Host: localhost:46697[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "[\r][\n]"
+DEBUG wire - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Length:72[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 << "[\r][\n]"
+DEBUG wire - http-outgoing-3 << "{"sessionId":"e7f6d387e78cfb50e812ff109cb42ae2","status":0,"value":null}"
+DEBUG headers - http-outgoing-3 << HTTP/1.1 200 OK
+DEBUG headers - http-outgoing-3 << Content-Length:72
+DEBUG headers - http-outgoing-3 << Content-Type:application/json; charset=utf-8
+DEBUG MainClientExec - Connection can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection [id: 3][route: {}->http://localhost:46697] can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG RequestAddCookies - CookieSpec selected: default
+DEBUG RequestAuthCache - Auth cache not set in the context
+DEBUG PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->http://localhost:46697][total kept alive: 2; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG MainClientExec - Stale connection check
+DEBUG wire - http-outgoing-3 << "[read] I/O error: Read timed out"
+DEBUG DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 10800000
+DEBUG MainClientExec - Executing request POST /session/e7f6d387e78cfb50e812ff109cb42ae2/timeouts HTTP/1.1
+DEBUG MainClientExec - Target auth state: UNCHALLENGED
+DEBUG MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG headers - http-outgoing-3 >> POST /session/e7f6d387e78cfb50e812ff109cb42ae2/timeouts HTTP/1.1
+DEBUG headers - http-outgoing-3 >> Content-Type: application/json; charset=utf-8
+DEBUG headers - http-outgoing-3 >> Content-Length: 31
+DEBUG headers - http-outgoing-3 >> Host: localhost:46697
+DEBUG headers - http-outgoing-3 >> Connection: Keep-Alive
+DEBUG headers - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)
+DEBUG headers - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+DEBUG wire - http-outgoing-3 >> "POST /session/e7f6d387e78cfb50e812ff109cb42ae2/timeouts HTTP/1.1[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Content-Length: 31[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Host: localhost:46697[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "{"type":"page load","ms":15000}"
+DEBUG wire - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Length:72[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 << "[\r][\n]"
+DEBUG wire - http-outgoing-3 << "{"sessionId":"e7f6d387e78cfb50e812ff109cb42ae2","status":0,"value":null}"
+DEBUG headers - http-outgoing-3 << HTTP/1.1 200 OK
+DEBUG headers - http-outgoing-3 << Content-Length:72
+DEBUG headers - http-outgoing-3 << Content-Type:application/json; charset=utf-8
+DEBUG MainClientExec - Connection can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection [id: 3][route: {}->http://localhost:46697] can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG RequestAddCookies - CookieSpec selected: default
+DEBUG RequestAuthCache - Auth cache not set in the context
+DEBUG PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->http://localhost:46697][total kept alive: 2; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG MainClientExec - Stale connection check
+DEBUG wire - http-outgoing-3 << "[read] I/O error: Read timed out"
+DEBUG DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 10800000
+DEBUG MainClientExec - Executing request POST /session/e7f6d387e78cfb50e812ff109cb42ae2/timeouts HTTP/1.1
+DEBUG MainClientExec - Target auth state: UNCHALLENGED
+DEBUG MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG headers - http-outgoing-3 >> POST /session/e7f6d387e78cfb50e812ff109cb42ae2/timeouts HTTP/1.1
+DEBUG headers - http-outgoing-3 >> Content-Type: application/json; charset=utf-8
+DEBUG headers - http-outgoing-3 >> Content-Length: 30
+DEBUG headers - http-outgoing-3 >> Host: localhost:46697
+DEBUG headers - http-outgoing-3 >> Connection: Keep-Alive
+DEBUG headers - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)
+DEBUG headers - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+DEBUG wire - http-outgoing-3 >> "POST /session/e7f6d387e78cfb50e812ff109cb42ae2/timeouts HTTP/1.1[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Content-Length: 30[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Host: localhost:46697[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "{"type":"implicit","ms":10000}"
+DEBUG wire - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Length:72[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 << "[\r][\n]"
+DEBUG wire - http-outgoing-3 << "{"sessionId":"e7f6d387e78cfb50e812ff109cb42ae2","status":0,"value":null}"
+DEBUG headers - http-outgoing-3 << HTTP/1.1 200 OK
+DEBUG headers - http-outgoing-3 << Content-Length:72
+DEBUG headers - http-outgoing-3 << Content-Type:application/json; charset=utf-8
+DEBUG MainClientExec - Connection can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection [id: 3][route: {}->http://localhost:46697] can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG RequestAddCookies - CookieSpec selected: default
+DEBUG RequestAuthCache - Auth cache not set in the context
+DEBUG PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->http://localhost:46697][total kept alive: 2; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG MainClientExec - Stale connection check
+DEBUG wire - http-outgoing-3 << "[read] I/O error: Read timed out"
+DEBUG DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 10800000
+DEBUG MainClientExec - Executing request POST /session/e7f6d387e78cfb50e812ff109cb42ae2/url HTTP/1.1
+DEBUG MainClientExec - Target auth state: UNCHALLENGED
+DEBUG MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG headers - http-outgoing-3 >> POST /session/e7f6d387e78cfb50e812ff109cb42ae2/url HTTP/1.1
+DEBUG headers - http-outgoing-3 >> Content-Type: application/json; charset=utf-8
+DEBUG headers - http-outgoing-3 >> Content-Length: 33
+DEBUG headers - http-outgoing-3 >> Host: localhost:46697
+DEBUG headers - http-outgoing-3 >> Connection: Keep-Alive
+DEBUG headers - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)
+DEBUG headers - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+DEBUG wire - http-outgoing-3 >> "POST /session/e7f6d387e78cfb50e812ff109cb42ae2/url HTTP/1.1[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Content-Length: 33[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Host: localhost:46697[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "{"url":"http://www.facebook.com"}"
+DEBUG wire - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Length:72[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 << "[\r][\n]"
+DEBUG wire - http-outgoing-3 << "{"sessionId":"e7f6d387e78cfb50e812ff109cb42ae2","status":0,"value":null}"
+DEBUG headers - http-outgoing-3 << HTTP/1.1 200 OK
+DEBUG headers - http-outgoing-3 << Content-Length:72
+DEBUG headers - http-outgoing-3 << Content-Type:application/json; charset=utf-8
+DEBUG MainClientExec - Connection can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection [id: 3][route: {}->http://localhost:46697] can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG RequestAddCookies - CookieSpec selected: default
+DEBUG RequestAuthCache - Auth cache not set in the context
+DEBUG PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->http://localhost:46697][total kept alive: 2; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG MainClientExec - Stale connection check
+DEBUG wire - http-outgoing-3 << "[read] I/O error: Read timed out"
+DEBUG DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 10800000
+DEBUG MainClientExec - Executing request POST /session/e7f6d387e78cfb50e812ff109cb42ae2/element HTTP/1.1
+DEBUG MainClientExec - Target auth state: UNCHALLENGED
+DEBUG MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG headers - http-outgoing-3 >> POST /session/e7f6d387e78cfb50e812ff109cb42ae2/element HTTP/1.1
+DEBUG headers - http-outgoing-3 >> Content-Type: application/json; charset=utf-8
+DEBUG headers - http-outgoing-3 >> Content-Length: 32
+DEBUG headers - http-outgoing-3 >> Host: localhost:46697
+DEBUG headers - http-outgoing-3 >> Connection: Keep-Alive
+DEBUG headers - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)
+DEBUG headers - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+DEBUG wire - http-outgoing-3 >> "POST /session/e7f6d387e78cfb50e812ff109cb42ae2/element HTTP/1.1[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Content-Length: 32[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Host: localhost:46697[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "{"using":"name","value":"email"}"
+DEBUG wire - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Length:282[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 << "[\r][\n]"
+DEBUG wire - http-outgoing-3 << "{"sessionId":"e7f6d387e78cfb50e812ff109cb42ae2","status":23,"value":{"message":"no such window: window was already closed\n  (Session info: chrome=71.0.3578.98)\n  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.12.5 x86_64)"}}"
+DEBUG headers - http-outgoing-3 << HTTP/1.1 200 OK
+DEBUG headers - http-outgoing-3 << Content-Length:282
+DEBUG headers - http-outgoing-3 << Content-Type:application/json; charset=utf-8
+DEBUG MainClientExec - Connection can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection [id: 3][route: {}->http://localhost:46697] can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189) on port 46697
+Only local connections are allowed.
+Jan 21, 2019 12:22:25 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[1548026548.026][SEVERE]: Unable to receive message from renderer
+]]></system-err>
+  </testcase>
+  <testcase name="proslab.unicam.usefultests.LoginTest" classname="proslab.unicam.usefultests.LoginTest" time="3.826">
+    <error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=71.0.3578.98)&#10;  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.12.5 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;&#10;System info: host: &apos;fabriziounicam&apos;, ip: &apos;fe80:0:0:0:ca7:98cf:b12d:210a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.5&apos;, java.version: &apos;1.8.0_161&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/_w/2rr1gddx3bs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53610}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}&#10;Session ID: e7f6d387e78cfb50e812ff109cb42ae2" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.12.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'fabriziounicam', ip: 'fe80:0:0:0:ca7:98cf:b12d:210a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.5', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/_w/2rr1gddx3bs...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53610}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: e7f6d387e78cfb50e812ff109cb42ae2
+	at proslab.unicam.usefultests.LoginTest.tearDownAfterClass(LoginTest.java:43)
+</error>
+    <system-out><![CDATA[DEBUG RequestAddCookies - CookieSpec selected: default
+DEBUG RequestAuthCache - Auth cache not set in the context
+DEBUG PoolingHttpClientConnectionManager - Connection request: [route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG PoolingHttpClientConnectionManager - Connection leased: [id: 3][route: {}->http://localhost:46697][total kept alive: 2; route allocated: 1 of 2000; total allocated: 3 of 2000]
+DEBUG MainClientExec - Stale connection check
+DEBUG wire - http-outgoing-3 << "[read] I/O error: Read timed out"
+DEBUG DefaultManagedHttpClientConnection - http-outgoing-3: set socket timeout to 10800000
+DEBUG MainClientExec - Executing request DELETE /session/e7f6d387e78cfb50e812ff109cb42ae2/window HTTP/1.1
+DEBUG MainClientExec - Target auth state: UNCHALLENGED
+DEBUG MainClientExec - Proxy auth state: UNCHALLENGED
+DEBUG headers - http-outgoing-3 >> DELETE /session/e7f6d387e78cfb50e812ff109cb42ae2/window HTTP/1.1
+DEBUG headers - http-outgoing-3 >> Host: localhost:46697
+DEBUG headers - http-outgoing-3 >> Connection: Keep-Alive
+DEBUG headers - http-outgoing-3 >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)
+DEBUG headers - http-outgoing-3 >> Accept-Encoding: gzip,deflate
+DEBUG wire - http-outgoing-3 >> "DELETE /session/e7f6d387e78cfb50e812ff109cb42ae2/window HTTP/1.1[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Host: localhost:46697[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Connection: Keep-Alive[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_161)[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG wire - http-outgoing-3 >> "[\r][\n]"
+DEBUG wire - http-outgoing-3 << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Length:325[\r][\n]"
+DEBUG wire - http-outgoing-3 << "Content-Type:application/json; charset=utf-8[\r][\n]"
+DEBUG wire - http-outgoing-3 << "[\r][\n]"
+DEBUG wire - http-outgoing-3 << "{"sessionId":"e7f6d387e78cfb50e812ff109cb42ae2","status":23,"value":{"message":"no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=71.0.3578.98)\n  (Driver info: chromedriver=2.45.615355 (d5698f682d8b2742017df6c81e0bd8e6a3063189),platform=Mac OS X 10.12.5 x86_64)"}}"
+DEBUG headers - http-outgoing-3 << HTTP/1.1 200 OK
+DEBUG headers - http-outgoing-3 << Content-Length:325
+DEBUG headers - http-outgoing-3 << Content-Type:application/json; charset=utf-8
+DEBUG MainClientExec - Connection can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection [id: 3][route: {}->http://localhost:46697] can be kept alive indefinitely
+DEBUG PoolingHttpClientConnectionManager - Connection released: [id: 3][route: {}->http://localhost:46697][total kept alive: 3; route allocated: 1 of 2000; total allocated: 3 of 2000]
+]]></system-out>
+  </testcase>
+</testsuite>

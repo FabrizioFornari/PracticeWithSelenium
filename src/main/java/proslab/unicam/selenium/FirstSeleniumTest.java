@@ -12,7 +12,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
 import proslab.unicam.config.PropertiesFile;
-import proslab.unicam.logandreports.FirstLogger;
 
 //import java.util.logging.Level;
 ////for defining a Logger
@@ -48,8 +47,8 @@ public class FirstSeleniumTest {
 	 * @date 08/01/2019 
 	 */
 	public static void setBrowser() {
-		browser="Firefox";
-		//browser="Chrome";
+		//browser="Firefox";
+		browser="Chrome";
 	}
 
 	public static void setBrowserConfig() {
@@ -58,7 +57,7 @@ public class FirstSeleniumTest {
 			
 			//Chrome
 			//This condition block sets config for Chrome browser
-			System.setProperty("webdriver.chrome.driver", projectPath+"/driver/chromedriver");
+			System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver");
 			driver = new ChromeDriver();
 		}
 		
@@ -68,7 +67,7 @@ public class FirstSeleniumTest {
 			//This condition block sets config for Firefox browser
 			FirefoxOptions options = new FirefoxOptions();
 			options.setCapability("marionette", true);
-			System.setProperty("webdriver.gecko.driver", projectPath+"/driver/geckodriver");	
+			System.setProperty("webdriver.gecko.driver", projectPath+"/drivers/geckodriver");	
 			driver = new FirefoxDriver(options);
 
 		}		

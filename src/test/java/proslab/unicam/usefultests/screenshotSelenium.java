@@ -22,6 +22,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 class screenshotSelenium {
 
 	static WebDriver driver;
+	static String projectPath = System.getProperty("user.dir"); 
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -55,7 +56,7 @@ class screenshotSelenium {
 
 	        //Call take screenshot function
 
-	        this.takeSnapShot(driver, "/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/practiceWithSelenium/files/screenshoot.png") ;  
+	        this.takeSnapShot(driver, projectPath+"/files/screenshoot.png") ;  
 	    }
 	
 	

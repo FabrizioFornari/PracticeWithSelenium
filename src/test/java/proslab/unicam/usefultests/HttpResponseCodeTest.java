@@ -29,7 +29,9 @@ import java.util.List;
 	    
 	    final static Logger log = Logger.getLogger(HttpResponseCodeTest.class.getName());
 				
-		static String configFilename = "/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/proslabSelenium/src/main/java/proslab/unicam/logandreports/log4j.properties";
+		static String projectPath = System.getProperty("user.dir"); 
+		
+		static String configFilename = projectPath+"/src/main/java/proslab/unicam/logandreports/log4j.properties";
 		
     
 	    @AfterAll

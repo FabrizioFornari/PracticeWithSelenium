@@ -29,7 +29,7 @@ class LoginTest {
 
 //    final static Logger log = Logger.getLogger(LoginTest.class.getName());
 //	
-//	static String configFilename = "/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/proslabSelenium/src/main/java/proslab/unicam/logandreports/log4j.properties";
+//	static String configFilename = "/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/practiceWithSelenium/src/main/java/proslab/unicam/logandreports/log4j.properties";
 //		
 
 	@BeforeAll
@@ -52,7 +52,7 @@ class LoginTest {
 	}
 
 
-//	@Test
+	@Test
 	public void login() {
 	
 		loginBrowser();

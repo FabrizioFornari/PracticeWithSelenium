@@ -18,9 +18,9 @@ class ASimpleSeleniumJunitTest {
 		
 		static WebDriver driver;
 		
-		static String configFilename = "/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/proslabSelenium/src/main/java/proslab/unicam/logandreports/log4j.properties";
-		
 		static String projectPath = System.getProperty("user.dir"); 
+		
+		static String configFilename = projectPath+"/src/main/java/proslab/unicam/logandreports/log4j.properties";
 		
 		static WebDriverWait wait;
 		
@@ -121,7 +121,7 @@ class ASimpleSeleniumJunitTest {
 		public static void testGmail() throws InterruptedException {
 			driver.get("http://www.gmail.com");
 			driver.manage().window().maximize();
-			driver.findElement(By.id("identifierId")).sendKeys("fabrizio.fornari@studenti.unicam.it");
+			driver.findElement(By.id("identifierId")).sendKeys("proslabtest@gmail.com");
 			
 //			Thread.sleep(1000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("CwaK9")));
