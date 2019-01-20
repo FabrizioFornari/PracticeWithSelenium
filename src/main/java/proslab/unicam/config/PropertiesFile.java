@@ -12,6 +12,8 @@ public class PropertiesFile {
 	
 	static Properties prop = new Properties();
 	
+	static String projectPath = System.getProperty("user.dir"); 
+	
 	public static void main(String[] args) {
 		
 		readPropertiesFile();
@@ -24,7 +26,7 @@ public class PropertiesFile {
 		
 		try {
 		
-			InputStream input = new FileInputStream("/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/proslabSelenium/src/main/java/proslab/unicam/config/config.properties");
+			InputStream input = new FileInputStream(projectPath+"/src/main/java/proslab/unicam/config/config.properties");
 			prop.load(input);
 			prop.getProperty("browser");
 			System.out.println(prop.getProperty("browser"));
@@ -44,8 +46,8 @@ public class PropertiesFile {
 		
 		try {
 			
-			OutputStream output = new FileOutputStream("/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/Selenium/src/co/proslab/unicam/config/config.properties");
-//			prop.setProperty("browser", "Chrome");
+			OutputStream output = new FileOutputStream(projectPath+"src/main/java/proslab/unicam/config/config.properties");
+			prop.setProperty("browser", "Chrome");
 			prop.setProperty("result", "pass");
 			prop.store(output, "updating browser");
 			

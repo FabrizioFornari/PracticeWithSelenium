@@ -5,11 +5,13 @@ import org.apache.log4j.PropertyConfigurator;
 
 public class FirstLogger {
 	
-//	public static void main(String[] args) {
-//		testLogger();
-//	}
-
-	static String configFilename = "/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/proslabSelenium/src/main/java/proslab/unicam/logandreports/log4j.properties";
+	public static void main(String[] args) {
+		testLogger();
+	}
+	
+	static String projectPath = System.getProperty("user.dir"); 
+	
+	static String configFilename = projectPath+"src/main/java/proslab/unicam/config/config.properties";
 	
 	public static final Logger logger = Logger.getLogger(FirstLogger.class.getName());
 	
@@ -17,7 +19,7 @@ public class FirstLogger {
 		PropertyConfigurator.configure(configFilename);
 	}
 	
-	public void testLogger() {
+	public static void testLogger() {
 		getlogger();
 		
 		logger.info("This is an information message");

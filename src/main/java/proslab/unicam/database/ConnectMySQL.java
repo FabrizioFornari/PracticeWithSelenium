@@ -12,7 +12,7 @@ public class ConnectMySQL {
 
 	private static final String CONN_STRING = "jdbc:mysql://localhost:3306/selenium?serverTimezone=Europe/Rome";
 	private static final String USERNAME = "root";
-	private static final String PASSWORD = "MAcri";
+	private static final String PASSWORD = "pwd";
 	private static final String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
 	
 	private Connection con = null;

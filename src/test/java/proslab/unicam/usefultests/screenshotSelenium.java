@@ -60,7 +60,7 @@ class screenshotSelenium {
 	
 	
 	
-	 public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
+	 public void takeSnapShot(WebDriver webdriver,String fileWithPath) throws Exception{
 
 	        //Convert web driver object to TakeScreenshot
 

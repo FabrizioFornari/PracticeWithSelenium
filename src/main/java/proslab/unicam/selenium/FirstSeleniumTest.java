@@ -25,8 +25,9 @@ public class FirstSeleniumTest {
 	
 	final static Logger log = Logger.getLogger(FirstSeleniumTest.class.getName());
 	
+	static String projectPath = System.getProperty("user.dir"); 
 	
-	static String configFilename = "/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/proslabSelenium/src/main/java/proslab/unicam/logandreports/log4j.properties";
+	static String configFilename = projectPath+"/src/main/java/proslab/unicam/logandreports/log4j.properties";
 	
 	
 	public static void main(String[] args) throws InterruptedException {
@@ -57,7 +58,7 @@ public class FirstSeleniumTest {
 			
 			//Chrome
 			//This condition block sets config for Chrome browser
-			System.setProperty("webdriver.chrome.driver", "/Users/user/Desktop/Selenium/chromedriver");
+			System.setProperty("webdriver.chrome.driver", projectPath+"/driver/chromedriver");
 			driver = new ChromeDriver();
 		}
 		
@@ -67,7 +68,7 @@ public class FirstSeleniumTest {
 			//This condition block sets config for Firefox browser
 			FirefoxOptions options = new FirefoxOptions();
 			options.setCapability("marionette", true);
-			System.setProperty("webdriver.gecko.driver", "/Users/user/Desktop/Selenium/geckodriver");	
+			System.setProperty("webdriver.gecko.driver", projectPath+"/driver/geckodriver");	
 			driver = new FirefoxDriver(options);
 
 		}		
