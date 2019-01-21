@@ -20,8 +20,6 @@ class ASimpleSeleniumJunitTest {
 		
 		static String projectPath = System.getProperty("user.dir"); 
 		
-		static String configFilename = projectPath+"/src/main/java/proslab/unicam/logandreports/log4j.properties";
-		
 		static WebDriverWait wait;
 		
 		@Test

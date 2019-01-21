@@ -14,7 +14,6 @@ public class PhantomJSDriverTest {
 		
 		System.out.println("Title of the web page is: "+driver.getTitle());
 		
-		
 		driver.quit();
 		
 	}

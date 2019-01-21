@@ -3,7 +3,6 @@ package proslab.unicam.selenium;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,27 +24,23 @@ public class FirstSeleniumTest {
 	final static Logger log = Logger.getLogger(FirstSeleniumTest.class.getName());
 	
 	static String projectPath = System.getProperty("user.dir"); 
+
+	static PropertiesFile prop = new PropertiesFile();
 	
-	static String configFilename = projectPath+"/src/main/java/proslab/unicam/logandreports/log4j.properties";
 	
 	
 	public static void main(String[] args) throws InterruptedException {
 			
-			setupLogger();
+			prop.readPropertiesFile();
+			//setupLogger();
 			//setBrowser();
 			setBrowserConfig();
 			runTest();
 			closeDriver();
 			
-			PropertiesFile.writePropertiesFile();
 	}
 	
 	
-	/**
-	 * Description
-	 * @author fabrizio.fornari@unicam.it
-	 * @date 08/01/2019 
-	 */
 	public static void setBrowser() {
 		//browser="Firefox";
 		browser="Chrome";
@@ -150,11 +145,11 @@ public class FirstSeleniumTest {
 		}
 	}
 	
-	public static void setupLogger() {
-		//log = Logger.getLogger(FirstSeleniumTest.class);
-		PropertyConfigurator.configure(configFilename);
-		PropertiesFile.readPropertiesFile();
-	}
+//	public static void setupLogger() {
+//		//log = Logger.getLogger(FirstSeleniumTest.class);
+//		PropertyConfigurator.configure(configFilename);
+//		PropertiesFile.readPropertiesFile();
+//	}
 	
 	public static void testProsWebElements() throws InterruptedException {
 		driver.get("http://pros.unicam.it/");

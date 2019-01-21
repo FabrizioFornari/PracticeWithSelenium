@@ -3,9 +3,7 @@ package proslab.unicam.katalan;
 import static org.junit.Assert.fail;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
-//import org.apache.log4j.Logger;
-//import org.apache.log4j.PropertyConfigurator;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -22,27 +20,21 @@ import proslab.unicam.config.PropertiesFile;
 class KatalanTest {
 
 	private static WebDriver driver;
-//	private static String baseUrl;
-//	private boolean acceptNextAlert = true;
+
 	private static StringBuffer verificationErrors = new StringBuffer();
 
 	final static Logger log = Logger.getLogger(KatalanTest.class.getName());
-	
-	
-	static String configFilename = "/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/proslabSelenium/src/main/java/proslab/unicam/logandreports/log4j.properties";
-	
 
+	static PropertiesFile prop = new PropertiesFile();
     
 	
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 		
-		PropertyConfigurator.configure(configFilename);
-		PropertiesFile.readPropertiesFile();
-	
-		
-		String projectPath = System.getProperty("user.dir");  
-		System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver");
+		//PropertyConfigurator.configure(configFilename);
+		prop.readPropertiesFile();
+		 
+		System.setProperty("webdriver.chrome.driver", prop.getProjectPath()+"/drivers/chromedriver");
 		
 	    driver = new ChromeDriver();
 	    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

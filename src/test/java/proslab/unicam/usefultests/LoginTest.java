@@ -2,13 +2,14 @@ package proslab.unicam.usefultests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.apache.log4j.Logger;
 //import org.apache.log4j.Logger;
 //import org.apache.log4j.PropertyConfigurator;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -18,24 +19,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-//import proslab.unicam.config.PropertiesFile;
+import proslab.unicam.config.PropertiesFile;
 
-//import org.openqa.selenium.firefox.FirefoxDriver;
 
 class LoginTest {
 	
 	
 	static WebDriver driver;
-
-//    final static Logger log = Logger.getLogger(LoginTest.class.getName());
-//	
-//	static String configFilename = "/Users/user/Documents/Applicazioni_Importanti/Eclipse IDE for Java EE Developers/New/WorkspaceEclipseJavaEE/practiceWithSelenium/src/main/java/proslab/unicam/logandreports/log4j.properties";
-//		
+	
+	final static Logger log = Logger.getLogger(HttpResponseCode.class.getName());
+		
+	static PropertiesFile prop = new PropertiesFile();
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-//		PropertyConfigurator.configure(configFilename);
-//		PropertiesFile.readPropertiesFile();
+		prop.readPropertiesFile();
 	}
 
 	@AfterAll

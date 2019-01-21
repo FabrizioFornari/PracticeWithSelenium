@@ -1,104 +1,127 @@
 package proslab.unicam.usefultests;
 
+import static org.junit.jupiter.api.Assertions.assertNull;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
-//import org.junit.After;
-//import org.junit.AfterClass;
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Disabled;
-//import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 //import org.junit.runner.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.restassured.RestAssured;
 import proslab.unicam.config.PropertiesFile;
 
-import java.util.List;
-//import static org.junit.jupiter.api.Assertions.*;
+class HttpResponseCodeTest {
 
-
-	public class HttpResponseCodeTest {
-
-	    static WebDriver driver;
-	    int statusCode;
-	    
-	    final static Logger log = Logger.getLogger(HttpResponseCodeTest.class.getName());
-				
-		static String projectPath = System.getProperty("user.dir"); 
-		
-		static String configFilename = projectPath+"/src/main/java/proslab/unicam/logandreports/log4j.properties";
-		
+	static WebDriver driver;
     
-	    @AfterAll
-	    public static void tearDown2(){
-	    	driver.close();
-	    }
-	    
-	    
-	    
-	    @Test
-//	    @Disabled
-	    public void testBrokenLinks() {
-	    	checkBrokenLinks();
-	    }
-	    
-	    public void checkBrokenLinks() {
-	    	
-	    	PropertyConfigurator.configure(configFilename);
-			PropertiesFile.readPropertiesFile();
-	    	try
-	    	{
-	    		
-	    	//code to test
+    int statusCode;
+    
+    static PropertiesFile prop = new PropertiesFile();
+    
+    final static Logger log = Logger.getLogger(HttpResponseCode.class.getName());
 	
-	    	String projectPath = System.getProperty("user.dir");  
-			System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver");
-			
-			
-	        driver = new ChromeDriver();
-	        driver.get("http://pros.unicam.it");
-
-	//Get all the links on the page
-	        List<WebElement> links = driver.findElements(By.cssSelector("a"));
-
-	        String href;
-
-	        for(WebElement link : links) {
-	            href = link.getAttribute("href");
-	            try
-		    	{
-	            	statusCode = RestAssured.get(href).statusCode();
-	            	System.out.println("statusCode: "+statusCode);
-
-		    	}
-		    	catch (Exception e)
-		    	{
-//		    		tearDown();
-		    		throw new AssertionError(href +"A clear description of the failure", e);
-		    	}
-	            
-	            if(200 != statusCode) {
-	                System.out.println(href + " gave a response code of " + statusCode);
-	            }
-	        }
-	        
-	    	}
-	    	catch (Exception e)
-	    	{
-//	    		tearDown();
-	    		throw new AssertionError("A clear description of the failure", e);
-	    	}
-	    }
-	    
-//	    public void tearDown(){
-//	    	driver.close();
-//	    }
-	    
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
 	}
 
+	@AfterAll
+	static void tearDownAfterClass() throws Exception {
+	}
 
+	@BeforeEach
+	void setUp() throws Exception {
+	}
+
+	@AfterEach
+	void tearDown() throws Exception {
+	}
+
+	@Test
+//	@Disabled
+	void checkBrokenLinks() {
+        String href = null;
+	
+        prop.readPropertiesFile();
+
+		System.setProperty("webdriver.chrome.driver", prop.getProjectPath()+"/drivers/chromedriver");
+		
+        driver = new ChromeDriver();
+        driver.navigate().to("http://pros.unicam.it");
+        //driver.get("http://pros.unicam.it");
+        
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		//Get all the links on the page
+        List<WebElement> links = driver.findElements(By.cssSelector("a"));
+        
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		List<String> Brokenlinks = new ArrayList<String>();
+
+        for(WebElement link : links) {
+        	
+        	href=isABrokenLink(link);
+        	if(!(href.equals("ok")))Brokenlinks.add(href);
+            
+            
+        }	
+        
+        for(String link : Brokenlinks) {
+        	System.out.println("Broken Link: "+link);
+        }
+        
+        driver.close();
+        assertNull(Brokenlinks);
+        
+		
+//        System.out.println(driver.getTitle());
+	}
+	
+	String isABrokenLink(WebElement link) {
+        String href;
+		href = link.getAttribute("href");
+        System.out.println("href: "+href);
+        try
+    	{
+            if(!href.contains("mailto")) {	
+	            statusCode = RestAssured.get(href).statusCode();
+	            System.out.println("statusCode: "+statusCode);
+            }
+            
+//            if(200 != statusCode) {
+//                System.out.println(href + " gave a response code of " + statusCode);
+//            }
+    	}
+    	catch (Exception e)
+    	{
+    		//tearDown();
+    		System.out.println(e.getMessage());		
+    		//throw new AssertionError("An href link is broken, check: "+href, e);
+    		return "An href link is broken, check: "+href +" "+ e;
+    	}
+		
+		return "ok";
+	
+	}
+
+}

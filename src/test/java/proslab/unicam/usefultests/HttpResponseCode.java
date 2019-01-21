@@ -1,7 +1,6 @@
 package proslab.unicam.usefultests;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,20 +18,17 @@ public class HttpResponseCode {
     WebDriver driver;
     int statusCode;
     
-    final static Logger log = Logger.getLogger(HttpResponseCodeTest.class.getName());
+    final static Logger log = Logger.getLogger(HttpResponseCode.class.getName());
 	
-	static String projectPath = System.getProperty("user.dir"); 
+	static PropertiesFile prop = new PropertiesFile();
 	
-	static String configFilename = projectPath+"/src/main/java/proslab/unicam/logandreports/log4j.properties";
 	
 
     public void checkBrokenLinks() {
     	
-    	PropertyConfigurator.configure(configFilename);
-		PropertiesFile.readPropertiesFile();
-		
-    	String projectPath = System.getProperty("user.dir");  
-		System.setProperty("webdriver.chrome.driver", projectPath+"/drivers/chromedriver");
+    	prop.readPropertiesFile();
+		  
+		System.setProperty("webdriver.chrome.driver", prop.getProjectPath()+"/drivers/chromedriver");
 		
 		
         driver = new ChromeDriver();

@@ -1,18 +1,15 @@
 package proslab.unicam.logandreports;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 
 import proslab.unicam.config.PropertiesFile;
 
 
 public class FirstLogger {
 	
-static String projectPath = System.getProperty("user.dir"); 
-	
-	static String configFilename = projectPath+"/src/main/java/proslab/unicam/logandreports/log4j.properties";
-	
 	public static final Logger logger = Logger.getLogger(FirstLogger.class.getName());
+	
+	static PropertiesFile prop = new PropertiesFile();
 	
 	public static void main(String[] args) {
 
@@ -21,9 +18,8 @@ static String projectPath = System.getProperty("user.dir");
 	
 
 	public static void testLogger() {
-		
-		PropertyConfigurator.configure(configFilename);
-//		PropertiesFile.readPropertiesFile();
+	
+		prop.readPropertiesFile();
 		
 		logger.info("This is an information message");
 		logger.error("This is an error message");

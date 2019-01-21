@@ -17,10 +17,6 @@ public class ASimpleSeleniumTest {
 	
 	static String projectPath = System.getProperty("user.dir"); 
 	
-	static String configFilename = projectPath+"/src/main/java/proslab/unicam/logandreports/log4j.properties";
-	
-
-	
 	public static void main(String[] args) throws InterruptedException {
 			
 		browser="Chrome";
@@ -33,20 +29,11 @@ public class ASimpleSeleniumTest {
 		testGmail();
 		//testPros();
 		//testProsWebElements();
-		
+//		setBrowser();
+//		setBrowserConfig();
 		
 		driver.close();
 	
-
-		
-		
-		
-//			setBrowser();
-//			setBrowserConfig();
-//			runTest();
-//			closeDriver();
-//			
-//			PropertiesFile.writePropertiesFile();
 	}
 	
 	
@@ -78,16 +65,7 @@ public class ASimpleSeleniumTest {
 		}		
 	}
 		
-	public static void runTest() throws InterruptedException {
-		
-//		
-//		testGmail();
-//		testGoogle();
-//		testPros();
-		testProsWebElements();
 
-
-	}
 	
 	public static void closeDriver() {
 		driver.close();
